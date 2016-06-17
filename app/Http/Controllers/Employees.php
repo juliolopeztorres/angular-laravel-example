@@ -45,7 +45,6 @@ class Employees extends Controller
      */
     public function update(Request $request, $id)
     {
-      die('hey');
       $employee = Employee::find($id);
       $employee->name = $request->input("name");
       $employee->email = $request->input("email");
